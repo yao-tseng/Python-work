@@ -183,6 +183,38 @@ def multiply_2_numbers( x, y ):
 x_5 = multiply_2_numbers( 3, 5 )
 print( x_5 )
 
+# classes and objects
+#objects are an encapsulation of variables and functions into a single entity. Objects get
+#their variables and functions from classes. Classes are essentially a template to create 
+#objects.
+print( "\n>>CLASSES AND OBJECTS" )
+
+class class_1:
+	print( "here is class_1" )	#this line itself will print
+	variable_1 = "a variable in class_1"
+
+	def function_3(self):
+		print( "here is function_3" )
+		variable_2 = "a variable in function_3"
+object_1 = class_1()			#this line does not print anything
+					#assign class(class_1) to object(object_1)
+print( object_1.variable_1 )		#this line prints variable_1
+object_1.function_3()			#do what function_3 does: print
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

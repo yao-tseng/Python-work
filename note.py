@@ -201,12 +201,33 @@ object_1 = class_1()			#this line does not print anything
 print( object_1.variable_1 )		#this line prints variable_1
 object_1.function_3()			#do what function_3 does: print
 
+# dictionaries
+print( "\n>>DICTIONARIES" )
 
+	#two ways to initialize
+dictionary_1 = {}
+dictionary_1[ "Allen Iverson" ] = "PHI"
+dictionary_1[ "Kobe Bryant" ] = "LAL"
+dictionary_1[ "Chris Paul" ] = "LAC"
+print( dictionary_1 )			#auto sort (sort by I have no idea what)
+dictionary_1[ "Isaiah Thomas" ] = "CAV"	#add value
+print( dictionary_1 )
 
+dictionary_2 = { 
+	"Allen Iverson:" : 3,
+	"Kobe Bryant " : 8,
+	"Chris Paul" : 3
+}
+print( dictionary_2 )
 
+for name, team in dictionary_1.items():	#for (key), (value) in (dictionary).items()
+	print( "%s is a %s guard" % (name, team) )
 
-
-
+	#two ways to delete
+del dictionary_1["Kobe Bryant"]
+print( dictionary_1 )
+dictionary_2.pop( "Chris Paul" )
+print( dictionary_2 )
 
 
 

@@ -228,18 +228,3 @@ del dictionary_1["Kobe Bryant"]
 print( dictionary_1 )
 dictionary_2.pop( "Chris Paul" )
 print( dictionary_2 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

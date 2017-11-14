@@ -1,3 +1,20 @@
+'''
+Execute: python scopes.py
+
+$ python scopes.py
+After local assignment: test variable
+After global assignment: test variable
+In global scope: global variable
+
+(Python 3)
+$ python scope.py
+After local assignment: test variable
+After nonlocal assignment: nonlocal variable
+After global assignment: nonlocal variable
+In global scope: global variable
+'''
+
+
 #V3 is for Python 3
 
 def scope_test():
@@ -25,15 +42,3 @@ scope_test()
 print( "In global scope: %s" % variable )
 
 
-'''
-output>>
-After local assignment: test variable
-After global assignment: test variable
-In global scope: global variable
-
-V3 output>>
-After local assignment: test variable
-After nonlocal assignment: nonlocal variable
-After global assignment: nonlocal variable
-In global scope: global variable
-'''
